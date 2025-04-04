@@ -3,7 +3,7 @@
 <suite name="WithoutArg">
   <test name="Test">
     <classes>
-      <class name="selenium_jenkins.withoutArgument"/>
+      <class name="selenjenk.seleniumjenkinss"/>
     </classes>
   </test> 
 </suite>  
