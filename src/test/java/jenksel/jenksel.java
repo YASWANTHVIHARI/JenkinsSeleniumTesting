@@ -18,7 +18,7 @@ public void setup() {
 	ChromeOptions options = new ChromeOptions();
 	//options.addArguments("--no-sandbox"); // Bypass OS security model
 	//options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
-	//options.addArguments("--headless"); // Run in headless mode for CI/CD
+	options.addArguments("--headless"); // Run in headless mode for CI/CD
 	driver = new ChromeDriver(options);
 
 	// Maximize browser window
