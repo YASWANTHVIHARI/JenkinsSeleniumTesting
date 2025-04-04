@@ -5,11 +5,11 @@
     <classes>
       <class name="jenksel.jenksel">
         <methods>
-          <include name="testGoogle"/>
-          <include name="testIndiapost"/>
-          <include name="tearDown"/>
-          <include name="google"/>
-          <include name="setup"/>
+          <include name="failingTest"/>
+          <include name="tearDownMethod"/>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+          <include name="setupDriver"/>
         </methods>
       </class> <!-- jenksel.jenksel -->
     </classes>

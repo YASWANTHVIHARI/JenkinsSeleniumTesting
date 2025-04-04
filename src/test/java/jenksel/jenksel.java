@@ -2,54 +2,41 @@ package jenksel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class jenksel {
-	WebDriver driver;
+public class jenksel extends baseTest {
 
-@BeforeTest
-public void setup() {
-	// Set Chrome options for Jenkins/CI environments
-	ChromeOptions options = new ChromeOptions();
-	options.addArguments("--no-sandbox"); // Bypass OS security model
-	options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
-	options.addArguments("--headless"); // Run in headless mode for CI/CD
-	driver = new ChromeDriver(options);
+    @Test
+    public void googleSearchTest() throws Exception {
+        test = extent.createTest("Google Search Test");
+        driver.get("https://www.google.com/");
+        test.info("Opened Google");
+        driver.findElement(By.name("q")).sendKeys("India Post", Keys.ENTER);
+        test.info("Searched for India Post");
+        Thread.sleep(2000);
+    }
 
-	// Maximize browser window
-	driver.manage().window().maximize();
-}
+    @Test
+    public void facebookTitleTest() {
+        test = extent.createTest("Facebook Title Test");
+        driver.get("https://www.facebook.com/");
+        test.info("Opened Facebook");
+    }
 
-@Test
-public void google() throws Exception {
-	driver.get("https://www.google.co.in/");
-	driver.findElement(By.name("q")).sendKeys("Indiapost", Keys.ENTER);
-	System.out.println("Google Search Title: " + driver.getTitle());
-	Thread.sleep(2000); // Ideally, replace with WebDriverWait
-}
+    @Test
+    public void wallpaperSiteTest() {
+        test = extent.createTest("HD Wallpapers Site Test");
+        driver.get("https://www.hdwallpapers.in/");
+        test.info("Opened HD Wallpapers site");
+    }
 
-@Test
-public void testGoogle() {
-	driver.get("https://www.facebook.com/");
-	System.out.println("Facebook Title: " + driver.getTitle());
-}
+    @Test
+    public void failingTest() {
+        test = extent.createTest("Intentional Failing Test");
+        driver.get("https://www.google.com/");
+        test.info("Opened Google");
 
-@Test
-public void testIndiapost() {
-	driver.get("https://www.hdwallpapers.in/");
-	System.out.println("HD Wallpapers Title: " + driver.getTitle());
-}
-
-@AfterTest
-public void tearDown() {
-	if (driver != null) {
-		driver.quit(); // Close the browser after tests
-	}
-}
-
+        // This will fail intentionally
+        driver.findElement(By.id("nonExistentElement")).click();
+    }
 }
