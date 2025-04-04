@@ -16,8 +16,8 @@ public class jenksel {
 public void setup() {
 	// Set Chrome options for Jenkins/CI environments
 	ChromeOptions options = new ChromeOptions();
-	//options.addArguments("--no-sandbox"); // Bypass OS security model
-	//options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
+	options.addArguments("--no-sandbox"); // Bypass OS security model
+	options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
 	options.addArguments("--headless"); // Run in headless mode for CI/CD
 	driver = new ChromeDriver(options);
 
