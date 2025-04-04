@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T17:30:52 IST" name="Default suite" finished-at="2025-04-04T17:31:09 IST" duration-ms="16392">
+  <suite started-at="2025-04-04T17:49:27 IST" name="Default suite" finished-at="2025-04-04T17:49:40 IST" duration-ms="12974">
     <groups>
     </groups>
-    <test started-at="2025-04-04T17:30:52 IST" name="Default test" finished-at="2025-04-04T17:31:09 IST" duration-ms="16392">
+    <test started-at="2025-04-04T17:49:27 IST" name="Default test" finished-at="2025-04-04T17:49:40 IST" duration-ms="12974">
       <class name="jenksel.jenksel">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:52 IST" name="setupReport" finished-at="2025-04-04T17:30:52 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:27 IST" name="setupReport" finished-at="2025-04-04T17:49:27 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:52 IST" name="setupDriver" finished-at="2025-04-04T17:30:54 IST" duration-ms="1913" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:27 IST" name="setupDriver" finished-at="2025-04-04T17:49:29 IST" duration-ms="1621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="facebookTitleTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:54 IST" name="facebookTitleTest" finished-at="2025-04-04T17:30:55 IST" duration-ms="914" status="PASS">
+        <test-method signature="facebookTitleTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:29 IST" name="facebookTitleTest" finished-at="2025-04-04T17:49:30 IST" duration-ms="879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- facebookTitleTest -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:55 IST" name="tearDownMethod" finished-at="2025-04-04T17:30:56 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:30 IST" name="tearDownMethod" finished-at="2025-04-04T17:49:30 IST" duration-ms="169" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:56 IST" name="setupDriver" finished-at="2025-04-04T17:30:57 IST" duration-ms="1282" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:30 IST" name="setupDriver" finished-at="2025-04-04T17:49:31 IST" duration-ms="1138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="failingTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:57 IST" name="failingTest" finished-at="2025-04-04T17:30:58 IST" duration-ms="1467" status="FAIL">
+        <test-method signature="failingTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:31 IST" name="failingTest" finished-at="2025-04-04T17:49:32 IST" duration-ms="1214" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#nonExistentElement"}
@@ -43,9 +43,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71d8ba136d8f36642cd18b69995ed038, findElement {using=id, value=nonExistentElement}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\yaswanth\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52016}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52016/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 71d8ba136d8f36642cd18b69995ed038]]>
+Command: [e6dd0f7b5bfd9c8bbe8e5976cf11749a, findElement {using=id, value=nonExistentElement}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\yaswanth\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52598}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52598/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6dd0f7b5bfd9c8bbe8e5976cf11749a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#nonExistentElement"}
@@ -54,9 +54,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71d8ba136d8f36642cd18b69995ed038, findElement {using=id, value=nonExistentElement}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\yaswanth\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52016}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52016/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 71d8ba136d8f36642cd18b69995ed038
+Command: [e6dd0f7b5bfd9c8bbe8e5976cf11749a, findElement {using=id, value=nonExistentElement}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\yaswanth\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52598}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52598/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6dd0f7b5bfd9c8bbe8e5976cf11749a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -104,7 +104,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failingTest -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:58 IST" name="tearDownMethod" finished-at="2025-04-04T17:30:59 IST" duration-ms="381" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:32 IST" name="tearDownMethod" finished-at="2025-04-04T17:49:33 IST" duration-ms="701" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,15 +115,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:30:59 IST" name="setupDriver" finished-at="2025-04-04T17:31:00 IST" duration-ms="1165" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:33 IST" name="setupDriver" finished-at="2025-04-04T17:49:34 IST" duration-ms="1101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="googleSearchTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:31:00 IST" name="googleSearchTest" finished-at="2025-04-04T17:31:04 IST" duration-ms="4119" status="PASS">
+        <test-method signature="googleSearchTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:34 IST" name="googleSearchTest" finished-at="2025-04-04T17:49:38 IST" duration-ms="3881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearchTest -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:31:04 IST" name="tearDownMethod" finished-at="2025-04-04T17:31:04 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:38 IST" name="tearDownMethod" finished-at="2025-04-04T17:49:38 IST" duration-ms="156" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,15 +134,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:31:04 IST" name="setupDriver" finished-at="2025-04-04T17:31:05 IST" duration-ms="1118" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:38 IST" name="setupDriver" finished-at="2025-04-04T17:49:39 IST" duration-ms="1073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="wallpaperSiteTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:31:05 IST" name="wallpaperSiteTest" finished-at="2025-04-04T17:31:08 IST" duration-ms="2892" status="PASS">
+        <test-method signature="wallpaperSiteTest()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:39 IST" name="wallpaperSiteTest" finished-at="2025-04-04T17:49:39 IST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wallpaperSiteTest -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:31:08 IST" name="tearDownMethod" finished-at="2025-04-04T17:31:08 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:39 IST" name="tearDownMethod" finished-at="2025-04-04T17:49:40 IST" duration-ms="194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,7 +153,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:31:08 IST" name="tearDownReport" finished-at="2025-04-04T17:31:09 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:jenksel.jenksel@236e3f4e]" started-at="2025-04-04T17:49:40 IST" name="tearDownReport" finished-at="2025-04-04T17:49:40 IST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->

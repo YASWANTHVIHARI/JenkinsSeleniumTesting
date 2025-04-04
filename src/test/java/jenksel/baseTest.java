@@ -27,17 +27,19 @@ public class baseTest {
 
 	@BeforeTest
 	public void setupReport() {
-		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		String reportPath = "test-output/ExtentReport_" + timestamp + ".html";
+	    String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+	    String reportDir = "test-output/extent-reports/";
+	    new File(reportDir).mkdirs(); // Ensure folder exists
+	    String reportPath = reportDir + "ExtentReport_" + timestamp + ".html";
 
-		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
-		sparkReporter.config().setReportName("Automation Test Report");
-		sparkReporter.config().setDocumentTitle("Extent Report");
+	    ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
+	    sparkReporter.config().setReportName("Automation Test Report");
+	    sparkReporter.config().setDocumentTitle("Extent Report");
 
-		extent = new ExtentReports();
-		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Environment", "QA");
-		extent.setSystemInfo("Tester", "Your Name");
+	    extent = new ExtentReports();
+	    extent.attachReporter(sparkReporter);
+	    extent.setSystemInfo("Environment", "QA");
+	    extent.setSystemInfo("Tester", "Your Name");
 	}
 
 	@BeforeMethod
