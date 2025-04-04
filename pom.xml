@@ -7,6 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jenkinsSeleniumTesting</name>
 	<dependencies>
+	
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -19,23 +20,22 @@
 			<version>1.2.6</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.9</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.30.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.5.3</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.30.0</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.9</version>
 		</dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -43,11 +43,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>ArtOFTesting</groupId>
-			<artifactId>AutomationFramework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -70,7 +65,7 @@
 					</includes>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/withog.xml</suiteXmlFile>
-					</suiteXmlFiles>
+					</suiteXmlFiles>			
 				</configuration>
 			</plugin>
 
