@@ -153,15 +153,14 @@
                   <a name="failingTest">
                   </a> <!-- failingTest -->
                   <span class="method-name">failingTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#nonExistentElement&quot;}
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=135.0.7049.41)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dc98b5d4b60228ae688a08bc38adc83, findElement {using=id, value=nonExistentElement}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\yaswanth\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52207}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52207/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1dc98b5d4b60228ae688a08bc38adc83
+Command: [2952b3512dd003c3c815695e50947447, get {url=https://www.knkjhgjdjj.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\yaswanth\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52175/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2952b3512dd003c3c815695e50947447
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -169,11 +168,8 @@ Session ID: 1dc98b5d4b60228ae688a08bc38adc83
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at jenksel.jenksel.failingTest(jenksel.java:40)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at jenksel.jenksel.failingTest(jenksel.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -264,26 +260,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'googleSearchTest')
+data.setCell(0, 1, 'failingTest')
 data.setCell(0, 2, 'jenksel.jenksel')
-data.setCell(0, 3, 3941);
+data.setCell(0, 3, 61515);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'wallpaperSiteTest')
 data.setCell(1, 2, 'jenksel.jenksel')
-data.setCell(1, 3, 2093);
+data.setCell(1, 3, 6144);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'failingTest')
+data.setCell(2, 1, 'googleSearchTest')
 data.setCell(2, 2, 'jenksel.jenksel')
-data.setCell(2, 3, 1758);
+data.setCell(2, 3, 4156);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'facebookTitleTest')
 data.setCell(3, 2, 'jenksel.jenksel')
-data.setCell(3, 3, 832);
+data.setCell(3, 3, 829);
 window.suiteTableData['WithoutArg']= { tableData: data, tableDiv: 'times-div-WithoutArg'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-WithoutArg">
               </div> <!-- times-div-WithoutArg -->
             </div> <!-- times-div -->
@@ -316,57 +312,57 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">230 ms</span>
+                <span class="method-start">274 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">facebookTitleTest</span>
-                <span class="method-start">1948 ms</span>
+                <span class="method-start">13828 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=facebookTitleTest status=SUCCESS method=jenksel.facebookTitleTest()[pri:0, instance...)</span>
-                <span class="method-start">2782 ms</span>
+                <span class="method-start">14661 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">2993 ms</span>
+                <span class="method-start">14872 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">failingTest</span>
-                <span class="method-start">4126 ms</span>
+                <span class="method-start">16056 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=failingTest status=FAILURE method=jenksel.failingTest()[pri:0, instance:jenksel.jen...)</span>
-                <span class="method-start">5891 ms</span>
+                <span class="method-start">77578 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">6249 ms</span>
+                <span class="method-start">78188 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">googleSearchTest</span>
-                <span class="method-start">7381 ms</span>
+                <span class="method-start">79355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=googleSearchTest status=SUCCESS method=jenksel.googleSearchTest()[pri:0, instance:j...)</span>
-                <span class="method-start">11323 ms</span>
+                <span class="method-start">83511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">11498 ms</span>
+                <span class="method-start">83720 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">wallpaperSiteTest</span>
-                <span class="method-start">12629 ms</span>
+                <span class="method-start">84838 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=wallpaperSiteTest status=SUCCESS method=jenksel.wallpaperSiteTest()[pri:0, instance...)</span>
-                <span class="method-start">14723 ms</span>
+                <span class="method-start">90982 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">14903 ms</span>
+                <span class="method-start">91176 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
