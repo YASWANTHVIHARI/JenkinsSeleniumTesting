@@ -103,18 +103,14 @@ public class baseTest {
     }
 
     // Wait for element by ID
-    public WebElement waitForElementById(String id) {
-        return wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
-    }
-
-    // Safe check for element presence
-    public boolean isElementPresentById(String id) {
-        try {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
-            return true;
-        } catch (TimeoutException e) {
-            System.out.println("Element with ID '" + id + "' not found within timeout.");
-            return false;
-        }
-    }
+	/*
+	 * public WebElement waitForElementById(String id) { return
+	 * wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id))); }
+	 * 
+	 * // Safe check for element presence public boolean isElementPresentById(String
+	 * id) { try {
+	 * wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id))); return
+	 * true; } catch (TimeoutException e) { System.out.println("Element with ID '" +
+	 * id + "' not found within timeout."); return false; } }
+	 */
 }
