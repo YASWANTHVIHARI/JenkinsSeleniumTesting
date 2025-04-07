@@ -33,7 +33,7 @@ public class jenksel extends baseTest {
 	
 	  @Test public void failingTest() { test =
 	  extent.createTest("Intentional Failing Test");
-	  driver.get("https://www.google.com/"); test.info("Opened Google");
+	  driver.get("https://www.mnbgtredcvgbhytrdecvbhuy.com/"); test.info("Opened Google");
 	  
 	  }
 	 
