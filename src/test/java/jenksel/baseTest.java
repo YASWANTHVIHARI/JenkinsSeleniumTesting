@@ -3,8 +3,8 @@ package jenksel;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -49,11 +49,11 @@ public class baseTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--headless"); // remove this for non-headless mode
+        options.addArguments("--headless"); // Remove this line to run with visible browser
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
-        // Create wait with 10 seconds timeout
+        // WebDriverWait with 10-second timeout
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
@@ -102,13 +102,19 @@ public class baseTest {
         return screenshotPath;
     }
 
-    // Utility method to safely find element by ID
+    // Wait for element by ID
     public WebElement waitForElementById(String id) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
     }
 
-    // Utility method to safely find element by CSS
-    public WebElement waitForElementByCss(String cssSelector) {
-        return wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(cssSelector)));
+    // Safe check for element presence
+    public boolean isElementPresentById(String id) {
+        try {
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
+            return true;
+        } catch (TimeoutException e) {
+            System.out.println("Element with ID '" + id + "' not found within timeout.");
+            return false;
+        }
     }
 }

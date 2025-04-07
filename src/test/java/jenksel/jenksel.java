@@ -30,13 +30,12 @@ public class jenksel extends baseTest {
         test.info("Opened HD Wallpapers site");
     }
 
-    @Test
-    public void failingTest() {
-        test = extent.createTest("Intentional Failing Test");
-        driver.get("https://www.google.com/");
-        test.info("Opened Google");
-
-        // will wait up to 10 seconds
-        waitForElementById("nonExistentElement").click();
-    }
+	/*
+	 * @Test public void failingTest() { test =
+	 * extent.createTest("Intentional Failing Test");
+	 * driver.get("https://www.google.com/"); test.info("Opened Google");
+	 * 
+	 * // will wait up to 10 seconds
+	 * waitForElementById("nonExistentElement").click(); }
+	 */
 }
