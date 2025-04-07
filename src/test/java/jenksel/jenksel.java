@@ -36,7 +36,7 @@ public class jenksel extends baseTest {
         driver.get("https://www.google.com/");
         test.info("Opened Google");
 
-        // This will fail intentionally
-        driver.findElement(By.id("nonExistentElement")).click();
+        // will wait up to 10 seconds
+        waitForElementById("nonExistentElement").click();
     }
 }
